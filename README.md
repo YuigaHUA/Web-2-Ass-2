@@ -49,12 +49,12 @@ Edit backend/.env file with your database credentials
 
 Update DB_USER and DB_PASSWORD if different from default
 
-Install backend dependencies
+# Install backend dependencies
 cd backend
 npm install
-Start the backend server
+
+# Start the backend server
 npm start
-# or for development with auto-reload
 npm run dev
 
 Access the application
