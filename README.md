@@ -32,7 +32,8 @@ Quick Start
 # Prerequisites
 Node.js (v14 or higher)
 MySQL (v5.7 or higher)
-
+git clone https://github.com/yourusername/charity-events-platform.git
+cd charity-events-platform
 # Login to MySQL and create the database
 mysql -u root -p
 
