@@ -32,7 +32,8 @@ Quick Start
 # Prerequisites
 Node.js (v14 or higher)
 MySQL (v5.7 or higher)
-git clone https://github.com/yourusername/charity-events-platform.git
+git clone https://github.com/YuigaHUA/Web-2-Ass-2.git
+
 cd charity-events-platform
 # Login to MySQL and create the database
 mysql -u root -p
@@ -44,11 +45,41 @@ EXIT;
 # Import the schema and sample data
 mysql -u root -p charityevents_db < database/charityevents_db.sql
 
-Configure environment variables
+Create Environment Configuration File
+Create a .env file in the backend folder with the following content:
 
-Edit backend/.env file with your database credentials
+env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password_here
+DB_NAME=charityevents_db
+PORT=3000
+DEBUG=true
+Important: Replace your_mysql_password_here with your actual MySQL password.
 
-Update DB_USER and DB_PASSWORD if different from default
+# Quick creation methods:
+# Windows Command Prompt:
+
+cmd
+cd backend
+echo DB_HOST=localhost > .env
+echo DB_USER=root >> .env
+echo DB_PASSWORD=your_mysql_password_here >> .env
+echo DB_NAME=charityevents_db >> .env
+echo PORT=3000 >> .env
+echo DEBUG=true >> .env
+
+# Linux/Mac Terminal:
+
+cd backend
+cat > .env << EOF
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password_here
+DB_NAME=charityevents_db
+PORT=3000
+DEBUG=true
+EOF
 
 # Install backend dependencies
 cmd
