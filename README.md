@@ -50,6 +50,7 @@ Edit backend/.env file with your database credentials
 Update DB_USER and DB_PASSWORD if different from default
 
 # Install backend dependencies
+cmd
 cd backend
 npm install
 
