@@ -1,7 +1,7 @@
 // API routes for charity events
 const express = require('express');
 const router = express.Router();
-const { promisePool } = require('../config/database');
+const { promisePool } = require('../config/event_db');
 
 /**
  * @route GET /api/events
@@ -329,5 +329,6 @@ router.get('/:id/similar', async (req, res) => {
         });
     }
 });
+
 
 module.exports = router;
