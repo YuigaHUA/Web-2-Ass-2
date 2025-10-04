@@ -1,5 +1,5 @@
 // Data models for charity events
-const { promisePool } = require('../config/database');
+const { promisePool } = require('../config/event_db');
 
 class EventModel {
     /**
@@ -210,5 +210,6 @@ class EventModel {
         return events;
     }
 }
+
 
 module.exports = EventModel;
