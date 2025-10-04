@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation - Charity Events Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>HopeFoundation</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="search.html" class="nav-link"><i class="fas fa-search"></i> Search Events</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Make a Difference Together</h1>
+            <p class="hero-subtitle">Join our charity events and create positive change in your community. Every participation counts!</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">$5.2M+</span>
+                    <span class="stat-label">Raised Since 2010</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">280+</span>
+                    <span class="stat-label">Events Hosted</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">45K+</span>
+                    <span class="stat-label">Lives Impacted</span>
+                </div>
+            </div>
+            <a href="#featured-events" class="btn btn-primary btn-large">
+                <i class="fas fa-calendar-alt"></i>
+                Explore Upcoming Events
+            </a>
+        </div>
+        <div class="hero-overlay"></div>
+    </header>
+
+    <main class="container">
+        <!-- Organization Information -->
+        <section class="org-info">
+            <div class="org-content">
+                <h2>About Hope Foundation Australia</h2>
+                <div class="org-grid">
+                    <div class="org-text">
+                        <p class="org-mission">"To create positive change through community-driven charity events and fundraising initiatives"</p>
+                        <p>Since 2010, Hope Foundation has been at the forefront of supporting various causes including children education, healthcare, and environmental conservation. We believe in the power of community and the difference we can make together.</p>
+                        <div class="org-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Education Programs</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Healthcare Initiatives</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-leaf"></i>
+                                <span>Environmental Conservation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-contact">
+                        <h3>Get In Touch</h3>
+                        <p><i class="fas fa-envelope"></i> contact@hopefoundation.org</p>
+                        <p><i class="fas fa-phone"></i> +61 2 9876 5432</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Level 5, 123 George St, Sydney NSW 2000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Events -->
+        <section id="featured-events" class="featured-events">
+            <div class="section-header">
+                <h2>Featured Events</h2>
+                <p>Don't miss these upcoming charity events</p>
+            </div>
+            <div id="featured-container" class="events-grid">
+                <!-- Featured events loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- All Events -->
+        <section class="all-events">
+            <div class="section-header">
+                <h2>All Upcoming Events</h2>
+                <p>Browse all available charity events</p>
+            </div>
+            <div class="events-controls">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                <button class="filter-btn" data-filter="featured">Featured</button>
+            </div>
+            <div id="events-container" class="events-grid">
+                <!-- All events loaded dynamically -->
+            </div>
+            <div id="loading-message" class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                Loading events...
+            </div>
+            <div id="error-message" class="error" style="display: none;"></div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="section-header">
+                <h2>Browse by Category</h2>
+                <p>Find events that match your interests</p>
+            </div>
+            <div id="categories-container" class="categories-grid">
+                <!-- Categories loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hope Foundation</h3>
+                    <p>Creating positive change through community-driven charity events since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="search.html">Search Events</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Sydney, Australia</p>
+                    <p><i class="fas fa-phone"></i> +61 2 9876 5432</p>
+                    <p><i class="fas fa-envelope"></i> contact@hopefoundation.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hope Foundation Australia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
